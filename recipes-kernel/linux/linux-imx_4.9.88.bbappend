@@ -3,8 +3,8 @@
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}-${PV}:"
 
-SRC_URI_append = " file://0001-defconfig.patch \
-                   file://0002-murata-dts-3.3v.patch"
+#SRC_URI_append = " file://0001-defconfig.patch \
+#                   file://0002-murata-dts-3.3v.patch"
 
 addtask copy_defconfig_after_patch after do_patch before do_configure
 do_copy_defconfig_after_patch () {
