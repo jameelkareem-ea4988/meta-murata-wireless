@@ -10,6 +10,6 @@ LOCALVERSION = "-${SRCBRANCH}"
 #https://github.com/jameelkareem-ea4988/linux-imx.git
 KERNEL_SRC ?= "git://github.com/jameelkareem-ea4988/linux-imx.git;protocol=https"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
-SRCREV = "14488d384bf7574eaf252355d81a32c1852b75c5"
+SRCREV = "26b30a6c5d63d0a93a3fe66665057ce94282b765"
 
 S = "${WORKDIR}/git"
