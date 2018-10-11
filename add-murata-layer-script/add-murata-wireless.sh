@@ -1,5 +1,6 @@
 cp ./sources/meta-murata-wireless/freescale/imx6ulevk.conf ./sources/meta-fsl-bsp-release/imx/meta-bsp/conf/machine/
 cp ./sources/meta-murata-wireless/freescale/linux-imx-src.inc ./sources/meta-fsl-bsp-release/imx/meta-bsp/recipes-kernel/linux/
+cp ./sources/meta-murata-wireless/freescale/u-boot-imx_2017.03.bb ./sources/meta-fsl-bsp-release/imx/meta-bsp/recipes-bsp/u-boot/
 EULA=$EULA DISTRO=$DISTRO MACHINE=$MACHINE . ./sources/meta-fsl-bsp-release/imx/tools/fsl-setup-release.sh -b $@
 
 echo "INTERNAL_MIRROR = \"http://localhost\"" >> conf/local.conf
